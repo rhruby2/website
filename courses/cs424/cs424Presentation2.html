@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	Raymond Hruby II
+	08/01/2019
+-->
+<html lang="en">
+<head>
+	<!-- Bootstrap --> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
+	<script src="/jquery-3.4.1.min.js"></script> <!-- not boostrap jquery slim build (this has AJAX) -->
+	<link rel="stylesheet" href="/css/main.css" media="all">
+	<script src="/js/main.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Yeon+Sung" rel="stylesheet"> <!-- style="font-family: 'Yeon Sung', cursive;" -->
+	<link href="https://fonts.googleapis.com/css?family=VT323|BioRhyme|Black+Ops+One|Bungee|Bungee+Shade|Creepster|Ewert|Fruktur|Gravitas+One|Monoton|Rubik:900" rel="stylesheet"> 
+	
+	
+	<!-- 
+
+    font-family: 'Bungee', cursive;
+
+    font-family: 'Bungee Shade', cursive;
+
+    font-family: 'BioRhyme', serif;
+
+    font-family: 'Fruktur', cursive;
+
+    font-family: 'Ewert', cursive;
+
+    font-family: 'Gravitas One', cursive;
+
+    font-family: 'Monoton', cursive;
+
+    font-family: 'Black Ops One', cursive;
+
+    font-family: 'Creepster', cursive;
+
+    font-family: 'Rubik', sans-serif;
+
+    -->
+	
+	<title>RHII | Presentation: Drug Poisoning Mortality</title>
+	
+</head>
+
+<body>
+	
+	
+	<script>
+	//	var pBWidth = $("progressBar").width();
+	//	
+	//	// Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+	//	window.addEventListener("scroll", myFunction);
+    //
+	//	function myFunction() {
+	//		var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+    //
+	//		var draw = pBWidth * scrollpercent;
+    //
+	//		// Reverse the drawing (when scrolling upwards)
+	//		progressBar.style.width = pBWidth - draw;
+	//	}
+	</script>
+	
+	<div class="container-fluid">
+	
+	<!-- Title -->
+	<div id="Title" class="row">
+		<div class="col align-self-center">
+			<h3 class="display-1">Drug Poisoning Mortality </h3>
+			<h3 class="display-4 text-muted">A Presentation </h3>
+		</div>
+	</div>
+	
+	<!-- navigation bar -->
+	<div id="NavigationBar"></div>
+	<script>
+	$('#NavigationBar').load('/template_navbar.html');
+	$(document).ready(function() {
+		setActiveNav('Classes');
+	});
+	</script>
+	
+	<!-- percentage bar -->
+	<!--<div class="progress">
+		<div id="progressBar" class="sticky progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+	</div>-->
+	
+	<!-- Content Columns -->
+	<div class = "row equal">
+		<div id="Column_Side" class="col-md-3 col-lg-3 col-xl-3">	
+		
+			<div class="sticky" style="padding-top:20px; padding-left:20px;"><h1>Outline</h1>
+				<a href="#Title">Home</a><br>
+				<a href="#Purpose of Visualization">Purpose of Visualization</a><br>
+				<a href="#Data">Data</a><br>
+				<a href="#Data Reliability">Data Reliability</a><br>
+				<a href="#Usability">Usability</a><br>
+				<a href="#Accessibility">Accessibility</a><br>
+				<a href="#Users">Users</a><br>
+				<a href="#Further Improvements">Further Improvements</a><br>
+				<a href="#Sources">Sources</a><br>
+			</div>
+		</div>
+			
+		<div id="Column_Main" class="col-md-8 col-lg-7 col-xl-6">			
+
+			<blockquote class="blockquote">
+				<p></p><p class="mb-0 text-primary">“A poisoning occurs when a person's exposure to a natural or manmade substance has an undesirable effect [includes drug overdose]."
+				<footer class = "blockquote-footer"><abbr title="Centers For Disease Control and Prevention">CDC</abbr> in <cite title="Source Title">Unintentional Drug Poisoning in the United States</cite></footer>
+			</blockquote>
+			
+			<figure>
+				<img src="media/CS424_Presentation_Main.png" alt="Drug Poisoning Mortality" style="width:100%;height:70%;">
+				<figcaption class="figure-caption">Figure 1. Default view of visualization section of webpage.</figcaption>
+			</figure>
+			
+			
+			<a id="Purpose of Visualization"><h1>Purpose of Visualization</h1></a>
+			<p>This applications visualizes data characterized by drug poisoning deaths in the United States for the years 1999 to 2007. It uses data and provides visualizations for national,state,and county data.
+				Considering the provided notes about rises in deaths caused by specific drugs, and words like "Trends" used for the visualizations, this visualization aims to show others the increasing drug epidemic in the United States.</p>
+			
+			
+			<a id="Data"><h1>Data</h1></a>
+			<u>Summary of data visualizations: </u>
+				<ul class="list-unstyled">
+					<li>Levels:			National | State | County</li>
+					<li>Year Range:		1999-2017</li>
+					<li>Visualizations: State & County with Heatmaps and Trends</li>
+				</ul>
+					
+			<p>The dataset was provided by the <abbr title="National Center for Health Statistics">NCHS</abbr>, a branch of the CDC. 
+				Filtering of specific codes from the International Classification of Diseases , Tenth Revision (ICD–10) were used to gather drug-related deaths.
+				These classifications include:</p>
+				<ul class="list">
+						<li>X40–X44 (unintentional)</li>
+						<li>X60–X64 (suicide)</li>
+						<li>X85 (homicide)</li>
+						<li>Y10–Y14 (undetermined intent)</li>
+				</ul>
+			<p>They mention others might be included in estimates due to multiple causes of death, or others might be underestimated due to unresolved or pending cases, or missclassification of ICD–10 code.</p>
+			<p> They then did some magic to fill in the spots of empty/missing data for a more complete picture fit for visualization. This is explained in "Data Reliability".</p>
+		
+		
+			<a id="Data Reliability"><h1>Data Reliability</h1></a>
+			<p><h5>Reputability</h5><p> 
+			<p>The CDC is government run and provide all their data online. They have many other data visualizations available to view as well.</p>
+			
+			<p>As they implement sophisticated statistical methods (to me at least), they have standards in place for unreliable data points.</p>
+			
+			<figure>
+				<img src="media/CS424_Presentation_UnreliableDataPoint.png" alt="Unreliable data points shown in red, with one selected to show pop-up with disclaimer." style="width:100%;height:70%;">
+				<figcaption class="figure-caption">Figure 2. Unreliable data points shown in red, with one selected to show pop-up with disclaimer.</figcaption>
+			</figure>
+				
+			<p>On each of their visualizations, they contain technical notes summarizing analyses methodologies and models, and references to past visualizations, data analyses, and used statistical methodologies. 
+				So in summary, great care was taken to manipulate the raw data and to form believable estimates.
+			<p>			
+			
+			<u>Statistical considerations:</u>
+			<ul class="list">
+				<li>Updated methodologies for more true analysis and estimates</li>
+				<li>Age-adjusted estimates using the direct method for better cross comparison in state and county death rates.</li>
+			</ul>
+			
+			
+			<a id="Usability"><h1>Usability</h1></a>
+			<p>Navigating the webpage is made easier by providing an outline, although the visualization section is called "Dashboard" in the outline, but not on the webpage.</p>
+			<p>Switching between categories is a breeze as it is in it's own section under 'Options'. Tools for switching between details are able to be selected below that located with the graphs and visualizations <span class="text-muted">(see Figure 1)</span>.
+				By providing this Options dropdown to switch views, the visualization saves computation time and does not overwhelm the user with too many graphs and maps.</p>
+			<p>Each graph provided is simple and easy to understand with appropriate titles, axis labels, and non-confusing colors <span class="text-muted">(see Figure 1)</span>. </p>
+			
+			<p>The provided Heatmaps are minimal and aesthetically pleasing that only incorporate needed tools and only show needed visuals <span class="text-muted">(see Figure 3)</span> (not much more can be said for the website in general).</p>	
+			<p>County selection on the 'County Heat Map' dashboard outlines the whole state. This increases spatial context for the selected county <span class="text-muted">(see Figure 3.5)</span>.
+			<figure>
+				<img src="media/CS424_Presentation_CountyHeatMap.png" alt="Estimated Crude Death Rates for Drug Poisoning by County, United States: 2017" style="width:100%;height:70%;">
+				<figcaption class="figure-caption">Figure 3. Heatmap of Counties.</figcaption>
+			</figure>
+			<figure>
+				<img src="media/cs424Presentation_stateOutline.PNG" alt="Estimated Crude Death Rates for Drug Poisoning by County, United States: 2017" style="width:100%;height:70%;">
+				<figcaption class="figure-caption">Figure 3.5. Heatmap of counties. Selection of Cook county with Illinois outline.</figcaption>
+			</figure>
+			
+			<h5>Comparison Ability</h5>
+			<p>State and County heat maps makes it easy to visually compare multiple states or counties. Subsection selection is possible from the map, and specific selection of states are available in the
+				'Urban Rural Trends By State' visualization to compare states by counties <span class="text-muted">(see Figure 4)</span>.
+				These counties are still hoverable to show more underlying details.</p>
+			<figure>
+				<img src="media/CS424_Presentation_StateSelection.PNG" alt="Urban Rural Trends By State With State Selection" style="width:100%;height:70%;">
+				<figcaption class="figure-caption">Figure 4. Urban Rural Trends By State visualization with state selection of Illinois, Maryland, and Massachusetts.</figcaption>
+			</figure>	
+				
+			<p>Some consideration was taken into account in that 'County trends' is presented differently from 'State trends' in that the 'County Trends' is a heat grid instead of line graph for a better visual understanding of the death rates.
+				But if you really wanted to see counties as a line graphs, there's a better visualization detailing the difference between Urban and Rural numbers under the 'Urban Rural Trends by State' dashboard.
+			</p>
+			
+			<p>Some functionality you have to discover yourself, like hover to view more data and the aforementioned state selection heatmap view in Figure 4.</p>
+			
+			<h5>Discrepancy</h5>
+			<p>Once you are able to find the County Trends heatmap selection, it allows for more variation on map selection, like ellipses or drawn selection, while the  County Heat Map only has rectangular selection.</p>
+			<p></p>
+			
+			
+			<a id="Accessibility"><h1>Accessibility</h1></a>
+			<h5>Preference</h5>
+			<p>For data, this visualization provides the visuals like graphs and maps, as well as textual data in the form of tables.
+				For textual learners and users, the webpage begins with a description of each category used for the visualizations.
+				As a mix between the two, the graphs and maps provide a hover feature to show specific and more detailed data.</p>
+			
+			<h5>Vision Impairment Considerations</h5>
+			<p>For one graph, the lines will be difficult to differentiate if colorblind, specifically, the orange, green, and red lines.</p>
+			<figure>
+				<img src="media/CS424_Presentation_AccessiblityColor.PNG" alt="Age-adjusted Death Rate for Drug Poisoning by Race and Hispanic Origin Graph" style="width:100%;height:70%;">
+				<figcaption class="figure-caption">Figure 5. Age-adjusted Death Rate for Drug Poisoning by Race and Hispanic Origin graph.</figcaption>
+			</figure>
+			<p>Most of the other visualizations, like the heat maps, are confined to one color of many shades, which with help with readability <span class="text-muted">(see Figure 3).</span></p>
+
+
+			<a id="Users"><h1>Users</h1></a>
+			<p>Generally, this visualization is for those interested in death rates caused by drugs in the United States. Today, the drug epidemic is still a common topic. By considering the technical writeups, easily visible statistical data, and easy access to used data files, this specific visualization is not really meant for the mainstream consumer. This webpage seems more suited for skilled
+				data analysts that could use that extra information, instead of an infotainment visualization that excludes those and skins a pretty webpage with a pretty infographic. This is compounded by the fact that the 
+				visualization is not optimized for mobile use, where infotainment is common to circulate.
+			</p>
+			
+			<h5>What the Users Want</h5>
+			<p>Some may want to search for drug related deaths by basic human classifications, like age or race, maybe to check if what they see in the news is true. This is available on the 'US Trends' dashboard, and may shake expectations. 
+				Others may want to see the changes over the years of increasing deaths to match the narrative of the drug epidemic, which is possible in the 'State Heat Map and Trends' and 'County Trends' dashboard.
+				Users may also want to see where the worst or best states or counties of the United States are relative to drug related deaths. Still, users may want to make it more personal and see how the data stacks up in their state or county.
+				Finally, users may want to see the death rate of counties organized by their classification based on population number and density. 
+				If a user wanted to search by specific ICD–10 code, then the user is out of luck as that information is unavailable.
+			</p>
+			
+			
+			<a id="Further Improvements"><h1>Further Improvements</h1></a>
+			<h5>More Viewing Screen Varieties</h5>
+			<p>If your screen is small enough, there will be a disclaimer that pops up above the visualization that says its only optimized for bigger screens (950 pixels and wider).
+				In a perfect world and to increase more accessibility, mobile screen sizes should be optimized for.</p>
+			<h5>Website Design</h5>
+			<p>The webpage is atrociously text filled with minimal section headings while the rest remains plain text. 
+				My natural instinct was to skip all this information to the pretty pictures and this would be other users' experience with the website as well. 
+				The instructions on how to navigate the Options get lost underneath a big paragraph. 
+				This is easily fixed by adding an instructions section with appropriate headings, and automaticallytically hide the walls of text under dropdown menus.</p>
+			<h5>Map Selection</h5>
+			<p> Some of the map selection is finnicky. If you click on a box in the 'County Trends' map, it will bring you to the County Heatmap with the county selected with the state outline like in Figure 3.5. 
+				Clicking on the whitespace does not show the whole County Heatmap, which is the functionality of the default 'County Heatmap'</p>
+			<h5>Viewing Other Info</h5>
+			<p>While there is viewable statistical data, other data, like the specific ICD–10 codes mentioned previously could be useful in filtering the data.</p>
+			
+			<a id="Sources"><h1>Sources</h1></a>
+			<p><a href="https://www.cdc.gov/medicationsafety/pdfs/cdc_5538_ds1.pdf"> Unintentional Drug Poisoning in the United States [PDF link]</a></p>
+			<p><a href="https://www.cdc.gov/nchs/data-visualization/drug-poisoning-mortality/"> Data Visualization Gallery: Drug Poisoning Mortality</a></p>
+			<p><a href="https://data.cdc.gov/NCHS/NCHS-Drug-Poisoning-Mortality-by-State-United-Stat/xbxb-epbu"> Description of NCHS Dataset</a></p>
+			<p><a href="http://www.somersault1824.com/tips-for-designing-scientific-figures-for-color-blind-readers/"> Designing for Color Blind Readers</a></p>
+			<p class="text-muted">Presentation created by Raymond Hruby II for UIC CS 424, Visual Analytics, Spring 2019.</p>
+		
+		</div> <!-- end Column_Main -->
+		
+		
+		<div id="Column_Side" class="col-md-1 col-lg-2 col-xl-3">	
+		
+		</div>
+	</div><!-- end row -->
+	
+
+	
+	</div> <!-- end Container -->
+	
+	<!-- Bootstrap [T]. jquery moved to <head> for functionality inside index.html -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
