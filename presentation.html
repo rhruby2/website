@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Bootstrap --> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="main.css" media="all" />
+	<script src="main.js"></script>
+	
+	<title> Presentation:Project Nourished </title>
+	
+	<!-- Button functionality -->
+	<script>
+		$(document).ready(function() {
+			$("#Button_Home").click( function(){
+				location.href = "index.html";
+			});
+			$("#Button_Projects").click( function(){
+				alert("Under Construction");
+			});
+			$("#Button_AboutMe").click( function(){
+				alert("Under Construction");
+			});
+			$("#Button_CS491").click( function(){
+				location.href = "CS491.html";
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="container-fluid">
+	
+	<!-- Title -->
+	<div id=Title class="row">
+		<div class="col align-self-center">
+			<h3 class="display-1">Project Nourished </h3>
+			<h3 class="display-4 text-muted">A Presentation </h3>
+		</div>
+	</div>
+	
+	<!-- Selection Bar -->
+	<div id="SelectionBar" class="row">
+		<div class="btn-group" style="width:100%">
+			<!--Buttons-->
+			<button id="Button_Home" type="button" class="btn btn-secondary" style="width:100%">Home</button>
+			<!-- Button Dropdown -->
+			<div class="btn-group" style ="width:100%">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" style ="width:100%">Classes</button>
+				<div class="dropdown-menu" style ="width:100%">
+					<a id="Button_CS491" class="dropdown-item" href="/CS491.html" >CS 491</a>
+				</div>
+			</div>
+			<button id="Button_Projects" disabled type="button" class="btn btn-secondary" style ="width:100%">Projects</button>
+			<button id="Button_AboutMe" disabled type="button" class="btn btn-secondary" style ="width:100%">About Me</button>
+		</div>
+	</div>
+	
+	<!-- Content -->
+	<div class = "row">
+		<div id="Column_Side" class="col h-100">	
+		</div>
+			
+		<div id="Column_Main" class="col col-lg-6 h-100">
+			<div class="row">
+				<p></p>
+				<div class="media">
+					<div class="media-body">
+						<video width="100%" height="700%" muted autoplay loop> <!-- T: chrome requires muted to autoplay -->
+							<source src="http://www.projectnourished.com/wp-content/uploads/2016/01/pn_site_intro.mp4" type="video/mp4">
+							Browser does not support video.
+						</video>
+					</div>
+				</div> 
+			</div><!--end media row-->
+			
+			<p class="lead">What makes a Meal? Project Nourished is a Virtual Reality system that aims to mimic the experience of eating and drinking.</p>
+			<h3>How its Done</h3>
+			<p>Equipment is provided to manipulate the senses so that your brain is tricked into thinking it is consuming real food and drink product
+				with a sense of satisfaction.</p>
+			<div class="row">
+				<div class="col">
+					<p><u>These senses are, namely:</u></p>
+					<ul class="list-unstyled">
+						<li>Vision</li>
+						<li>Taste</li>
+						<li>Smell</li>
+						<li>Texture</li>
+						<li>Consistency</li>
+						<li>Sound</li>
+					</ul>
+				</div>
+				
+				<div class="col">
+					<p><u>Produced by these systems:</u></p>
+					<ul class="list-unstyled">
+						<li>Aromatic Diffuser</li>
+						<li>VR Headset</li>
+						<li>Bone Conducting Transducer</li>
+						<li>Gyroscopic Utensil</li>
+						<li>Virtual Cocktail Glass</li>
+						<li>3D Printed Food</li>
+					</ul>
+				</div>
+			</div><!-- end list row-->
+			<h3>Talking Points</h3>
+			<p> Many VR projects draw a focus on usually one, two, or three senses. This one wants to do it all. Now I know what this looks like.
+				on the surface. It might seem like a dreamt up shallow art piece that got a little to far out of hand, or an ultra chique product 
+				directed to the audience of only the tippiest top of the elite, but within this project are many hidden groundbreaking technologies in 
+				development.</p>
+			<p><b>Bone Conducting Transducer</b></p>
+			<p> Bone Conduction is the process of transferring sound to the ear via bone. Its main properties are that it allows a user to 
+			    simultaneously use their ears for normal hearing while percieving sounds of the transducer, and that this sound from the 
+				transducer is inconspicuous in that it cannot be heard by others, almost like the sound is coming from inside your head. 
+				This implementation is particularly interesting, in that this may be the only application of bone conduction where the transduced
+				sound directly mimics in real life sound, the chewing sounds and mouth movements you hear inside your head when you eat or drink.</p>
+			<p><b>3D Printed Food</b></p>
+			<p>3D printed food has been around and experimented with <span class="text-muted">
+				(read more about 3D printed food <a href="https://all3dp.com/1/3d-printed-food-3d-printing-food/"> here</a> )</span> 
+				but one standing problem of using 3d printed food is creating and maintaining texture. Project Nourished seemed to have solved this problem in 
+				a diffrent way by developing a food source that can be 3d printed to the exact specifications of a 3D model. One of their proud 
+				achievements, I can only assume as it is shown on their main webpage and their production video, is reproducing the sushi eating
+				experience by printing an intricate block of rice capturing the texture and consistency of a real block of rice. </p>
+			<p></p>
+			
+			<figure>
+				<img src="3dprintedrice.PNG" alt="3d printed rice block" style="width:100%;height:70%;">
+			</figure>
+			
+			<p>In addition, this printed food is said to be made with substainable sources, like algae and insects, combined with a hydrocolloid base
+				which provides structure and texture 
+				<span class="text-muted">(hydrocolloids are present in many foods as a thickening agent)</span>.</p>
+			
+			<h3>Application</h3>
+			<ul class="list-unstyled">
+				<li>Virtual indulging         <pre>- eat various foods to your stomach's desire or until you can't stand the smell, at various locations</pre></li>
+				<li>Countless imaginary foods <pre>- now is your chance to know what unicorn meat tastes like</pre></li>
+				<li>Sustainability            <pre>- your descendants new favorite space food.</pre></li>
+				<li>Food allergy and therapy relief <pre>- everyone can have their cake and eat it too, without the influx of calories</pre></li>
+			</ul>
+			
+			<h3>Application in Practice</h3>
+			<p>(+) Eating experience with people across the world. There is potential to turn this system into a new form of virtual social interaction, whether
+					it becomes a confined casual chat or a big planned event to taste the newest creations with others.</p>
+			<p>(-) Isolated eating experience. There is also potential to use this system as a way to further isolate oneself from reality. This can become an	
+					entirely solo experience in an entirely virtual location, with little to no interaction with other people.</p>
+					
+			<p>(-) At this stage and what was presented by their video, the Project Nourished experience should come with a hefty price tag. If the team decides
+					to implement augmented features on actual food, as was said on their webpage, then the Virtual headset used must be close to the Microsoft 
+					Hololens, and in that case, this becomes a mixed reality experience that drastically increases the price tag versus VR systems.</p>
+			
+			
+			<p>Their high production webpage leaves a lot to be answered, like using deep learning to maximize the pleasure of consumption, but unfortunately, the 
+			    founder of this project hasn't uploaded any new production videos to his Youtube channel in more than two years and the webpage remains incomplete.
+				Fortunately, he was conducted in an interview February of this year 
+				<a href="https://www.jwtintelligence.com/2018/02/jinsoo-an-founder-and-ceo-project-nourished/"> here</a> which offers more insight into
+				the "why" of Project Nourished, and its potential implication in a virtually connected world.</p>
+			
+			<a href="http://www.projectnourished.com"> Project Nourished Webpage</a>
+			<p class="text-muted">Content sourced from www.projectnourished.com, all3dp.com, www.jwtintelligence.com</p>
+		</div>
+		
+		<div id="Column_Side" class="col h-100">	
+		</div>
+	</div><!-- end row -->
+	
+
+	
+	</div> <!-- end Container -->
+	
+	<!-- Bootstrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>

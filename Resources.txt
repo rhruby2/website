@@ -1,0 +1,10 @@
+Resources for Webpage:
+
+Bootstrap - CDN and tutorials
+https://getbootstrap.com
+
+W3schools - tutorials
+https://www.w3schools.com
+
+Bootstrap Lux Theme
+https://bootswatch.com/lux/

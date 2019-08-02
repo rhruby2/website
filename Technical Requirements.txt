@@ -1,0 +1,22 @@
+Raymond Hruby II Webpage: Technical Requirements
+
+Bootstrap:
+meta & css required before other css at top of <head>
+jquery,popper,and bootstrap required at end of <body> 
+*** jquery moved to <head> 
+*** using non-bootstrap jquery build (for AJAX support)
+
+
+Implementations:
+HTML Elements
+Bootstrap Elements
+CSS
+Jquery Middle Functions for Modals
+Jquery Loading HTML templates
+Jquery Button Functionality (archived)
+
+
+Todo:
+Move templates to template folder
+Jquuery middle function for Cards
+Lazy loading-https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/
